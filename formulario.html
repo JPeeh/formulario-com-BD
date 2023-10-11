@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Lead</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maxWidth">
+        <form method="POST" action="recebe.php" autocomplete="off">
+            <fieldset>
+                <div class="obrigatorio">
+                    <label> Qual é o seu nome?
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required autocomplete="off">
+                    </label>
+
+                    <label>Telefone/Whatsapp
+                        <input type="tel" name="telefone" id="telefone" placeholder="DDD+Numero" required autocomplete="off">
+                    </label>
+
+                    <label>E-mail
+                        <input type="email" name="email" id="email" placeholder="Seu melhor e-mail..." required autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="opcional">
+
+                    <label>Instagram
+                        <input type="text" name="instagram" id="instagram" placeholder="Responda aqui..." required autocomplete="off">
+                    </label>
+
+                    <label>Site da empresa
+                        <input type="text" name="site_empresa" id="site_empresa" placeholder="Responda aqui..." required autocomplete="off">
+                    </label>
+                </div>
+
+                <input type="submit" name="submit" class="btn" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

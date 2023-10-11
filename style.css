@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maxWidth{
+    max-width: 1324px;
+    margin: 0 auto;
+}
+
+form{
+    border-top: 1px solid #6D53CA;
+    border-bottom: 1px solid #6D53CA;
+    width: 600px;
+    height: 700px;
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 36%, rgba(109,83,192,1) 200%);
+    border-radius: 15px;
+    color: white;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
+
+input{
+    display: flex;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(128, 128, 128, .4);
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    transition: .3s linear;
+}
+
+.obrigatorio{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.obrigatorio input:focus{
+    padding-left: .5rem;
+    border-bottom: 1px solid #6D53CA;
+}
+
+.obrigatorio input:valid{
+    border-bottom: 1px solid green;
+}
+
+.opcional{
+    display: flex;
+    flex-direction: column  ;
+    gap: 2rem;
+}
+
+.maxWidth .btn{
+    width: fit-content;
+    background-color: #08F267;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s linear;
+    border: none;
+    padding: 1rem 2rem;
+    margin-left: auto;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.btn:hover{
+    background-color: rgb(109, 83, 202, .4);
+
+}
